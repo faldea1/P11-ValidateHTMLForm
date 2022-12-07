@@ -37,19 +37,12 @@
                     <div class="form-row d-flex">
                         <div class="col mb-3">
                             <label for="mycard" class="mb-2">Card #</label>
-                            <input type="number" class="form-control" id="mycard"
-                                placeholder="XXXXXXXXXXXXXXXX" value="XXXXXXXXXXXXXXXX" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
+                            <input type="number" class="form-control" id="mycard" placeholder="XXXXXXXXXXXXXXXX"
+                                >
                         </div>
                         <div class="col mb-3 px-5">
                             <label for="myCVC" class="mb-2">CVC #</label>
-                            <input type="number" class="form-control" id="myCVC" placeholder="0000"
-                                value="0000" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
+                            <input type="number" class="form-control" id="myCVC" placeholder="0000">
                         </div>
                         <div class="col mb-3">
                             <label for="myamount" class="mb-2">Amount</label>
@@ -57,11 +50,8 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroupPrepend">$</span>
                                 </div>
-                                <input type="number" class="form-control" id="myamount"
-                                    placeholder="Amount" aria-describedby="inputGroupPrepend" required>
-                                <div class="invalid-feedback">
-                                    Please choose a username.
-                                </div>
+                                <input type="number" class="form-control" id="myamount" placeholder="Amount"
+                                    aria-describedby="inputGroupPrepend">
                             </div>
                         </div>
                     </div>
@@ -87,7 +77,7 @@
                 <div class="form-group col-4 px-5">
                     <label for="mystate" class="mb-2">State</label>
                     <select id="mystate" class="form-control">
-                        <option selected>Pick a State</option>
+                        <option value="">Pick a State</option>
                         <option value="New York">New York</option>
                         <option value="California">California</option>
                         <option value="Miami">Miami</option>
@@ -151,8 +141,7 @@
                     <div class="col-6 px-4 mx-2">
                         <div class="form-group pb-4">
                             <label for="mymessage" class="mb-2">Message</label>
-                            <textarea class="form-control" id="mymessage" rows="3"
-                                cols="70"></textarea>
+                            <textarea class="form-control" id="mymessage" rows="3" cols="70"></textarea>
                             <label id="comment">Add any notes here.</label>
                         </div>
                     </div>
