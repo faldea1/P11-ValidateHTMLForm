@@ -16,7 +16,7 @@
 
 <body>
 
-    <form>
+    <form id="myform" class="form">
         <div class="container border mt-4">
             <div class="row">
 
@@ -28,7 +28,7 @@
 
                 <!--  ALERTA -->
                 <div class="px-2.5">
-                    <div class="alert alert-danger px-3" role="alert">
+                    <div id="myalert" class="alert alert-danger px-3" role="alert">
                         Some fields are missing
                     </div>
                 </div>
@@ -36,28 +36,28 @@
                 <form class="needs-validation" novalidate>
                     <div class="form-row d-flex">
                         <div class="col mb-3">
-                            <label for="validationCustom01" class="mb-2">Card #</label>
-                            <input type="number" class="form-control" id="validationCustom01"
+                            <label for="mycard" class="mb-2">Card #</label>
+                            <input type="number" class="form-control" id="mycard"
                                 placeholder="XXXXXXXXXXXXXXXX" value="XXXXXXXXXXXXXXXX" required>
                             <div class="valid-feedback">
                                 Looks good!
                             </div>
                         </div>
                         <div class="col mb-3 px-5">
-                            <label for="validationCustom02" class="mb-2">CVC #</label>
-                            <input type="number" class="form-control" id="validationCustom02" placeholder="0000"
+                            <label for="myCVC" class="mb-2">CVC #</label>
+                            <input type="number" class="form-control" id="myCVC" placeholder="0000"
                                 value="0000" required>
                             <div class="valid-feedback">
                                 Looks good!
                             </div>
                         </div>
                         <div class="col mb-3">
-                            <label for="validationCustomUsername" class="mb-2">Amount</label>
+                            <label for="myamount" class="mb-2">Amount</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroupPrepend">$</span>
                                 </div>
-                                <input type="number" class="form-control" id="validationCustomUsername"
+                                <input type="number" class="form-control" id="myamount"
                                     placeholder="Amount" aria-describedby="inputGroupPrepend" required>
                                 <div class="invalid-feedback">
                                     Please choose a username.
@@ -69,24 +69,24 @@
             <!--  DATOS2 -->
             <div class="form-row d-flex mb-3">
                 <div class="form-group col-6">
-                    <label for="name" class="mb-2">First Name</label>
-                    <input type="name" class="form-control" id="First Name">
+                    <label for="FirstName" class="mb-2">First Name</label>
+                    <input type="name" class="form-control" id="FirstName">
                 </div>
 
                 <div class="form-group col-6 px-4 mx-4">
-                    <label for="name" class="mb-2">Last Name</label>
-                    <input type="last name" class="form-control" id="Last Name">
+                    <label for="LastName" class="mb-2">Last Name</label>
+                    <input type="last name" class="form-control" id="LastName">
                 </div>
             </div>
             <!--  DATOS3 -->
             <div class="form-row d-flex">
                 <div class="form-group col-6">
-                    <label for="inputCity" class="mb-2">City</label>
-                    <input type="text" class="form-control" id="inputCity">
+                    <label for="mycity" class="mb-2">City</label>
+                    <input type="text" class="form-control" id="mycity">
                 </div>
                 <div class="form-group col-4 px-5">
-                    <label for="inputState" class="mb-2">State</label>
-                    <select id="inputState" class="form-control">
+                    <label for="mystate" class="mb-2">State</label>
+                    <select id="mystate" class="form-control">
                         <option selected>Pick a State</option>
                         <option value="New York">New York</option>
                         <option value="California">California</option>
@@ -95,8 +95,8 @@
                     </select>
                 </div>
                 <div class="form-group col-2 pb-4">
-                    <label for="inputZip" class="mb-2">Postal Code</label>
-                    <input type="number" class="form-control" id="inputpotalcode">
+                    <label for="mypostalcode" class="mb-2">Postal Code</label>
+                    <input type="number" class="form-control" id="mypostalcode">
                 </div>
             </div>
 
@@ -150,8 +150,8 @@
                     <div class="col-3 mx-2"></div>
                     <div class="col-6 px-4 mx-2">
                         <div class="form-group pb-4">
-                            <label for="exampleFormControlTextarea1" class="mb-2">Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            <label for="mymessage" class="mb-2">Message</label>
+                            <textarea class="form-control" id="mymessage" rows="3"
                                 cols="70"></textarea>
                             <label id="comment">Add any notes here.</label>
                         </div>
@@ -171,10 +171,10 @@
 
                 <nav class="navbar navbar-light bg-light d-flex justify-content-end py-3 px-3 border">
                     <div class="px-2">
-                        <button type="button" class="btn btn-secondary">Cancel</button>
+                        <button type="button" class="btn btn-secondary" id="mycancel">Cancel</button>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Send</button>
+                        <button type="submit" class="btn btn-primary" data-dismiss="modal" id="mysend">Send</button>
                     </div>
                 </nav>
 
